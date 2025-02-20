@@ -24,14 +24,14 @@
         <div class="card-footer">
             <img src="/src/assets/gitlab-logo.png" alt="gitlab">
             <div class="card-links">
-                <a :href="project.gitlab_repo" target="_blank">Repo</a>
-                <a :href="project.gitlab_wiki" target="_blank">Wiki</a>
+                <a :href="project.gitlab_repo" target="_blank" :class="{'disabled-link': !project.gitlab_repo}">Repo</a>
+                <a :href="project.gitlab_wiki" target="_blank" :class="{'disabled-link': !project.gitlab_wiki}">Wiki</a>
             </div>
 
             <img src="/src/assets/github-logo.png" alt="github">
             <div class="card-links">
-                <a :href="project.github_repo" target="_blank">Repo</a>
-                <a :href="project.github_wiki" target="_blank">Wiki</a>
+                <a :href="project.github_repo" target="_blank" :class="{'disabled-link': !project.github_repo}">Repo</a>
+                <a :href="project.github_wiki" target="_blank" :class="{'disabled-link': !project.github_wiki}">Wiki</a>
             </div>
         </div>
     </div>
@@ -80,4 +80,9 @@
             .card-footer a{
                 padding: 5px 15px;
             }
+    .disabled-link {
+        pointer-events: none;
+        opacity: 0.5;
+        text-decoration: line-through;
+    }
 </style>

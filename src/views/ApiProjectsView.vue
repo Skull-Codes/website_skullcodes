@@ -6,6 +6,8 @@
     "Implementación de Autenticación JWT", 
     "Contenedores Docker y Compose, Test unitarios, Linter e Integración con Git CI_CD", 
     "Documentación de código con Swagger"];
+
+  const projects = apiProjects.reverse();
     
 </script>
 
@@ -22,7 +24,7 @@
     <br/>
 
     <div class="cardlist">
-      <Card  v-for="project in apiProjects" :key="project.id" :project="project" />
+      <Card  v-for="project in projects" :key="project.id" :project="project" />
     </div>
   </div>
 </template>

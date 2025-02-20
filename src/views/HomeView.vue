@@ -1,6 +1,8 @@
 <script setup>
-  import newsList from '../assets/data/news.json';
+  import newsData from '../assets/data/news_data.json';
   import NewsCard from '../components/NewsCard.vue';
+
+  const newsList = newsData.reverse();
 </script>
 
 <template>
