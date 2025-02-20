@@ -1,0 +1,49 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.blue {
+  text-decoration: none;
+  color: rgb(0, 65, 206);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.cardlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(246, 100%, 27%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 5px 0px;
+  }
+}

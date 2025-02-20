@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "GOGOGO",
+        "language": "GO",
+        "framework": "Gin-Gonic",
+        "architecture": "REST",
+        "database": "MongoDB",
+        "logo": "gogogo-logo.webp",
+        "gitlab_repo": "https://gitlab.com/skullcodes/gogogo",
+        "gitlab_wiki": "https://gitlab.com/skullcodes/gogogo/-/wikis/Creando-un-CRUD-de-ejemplo-(videos)",
+        "github_repo": "https://github.com/Skull-Codes/GOGOGO",
+        "github_wiki": "https://github.com/Skull-Codes/GOGOGO/wiki"
+    },
+    {
+        "id": 2,
+        "name": "Instant~Noodles",
+        "language": "JavaScript",
+        "framework": "Node Express",
+        "architecture": "REST",
+        "database": "MongoDB",
+        "logo": "instant~noodles-logo.webp",
+        "gitlab_repo": "https://gitlab.com/skullcodes/instant-noodles",
+        "gitlab_wiki": "",
+        "github_repo": "",
+        "github_wiki": ""
+    }
+]

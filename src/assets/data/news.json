@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "date": "20-02-2025",
+        "image": "logo.webp",
+        "title": "Arrancamos con la nueva web",
+        "description": "He creado esta nueva web para ir ordenando los distintos esqueletos que iré desarrollando. En esta primera fase estaré trabajando con API Rest básicas, pero más adelante tocaré otros tipos de proyectos."
+    }
+]
