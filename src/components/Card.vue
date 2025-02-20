@@ -2,12 +2,16 @@
     defineProps({
         project: Object,
     });
+
+    const getImageUrl = (logo) => {
+        return new URL(`../assets/project_logos/${logo}`, import.meta.url).href;
+    };
 </script>
 
 <template>
     <div class="card">
         <div class="card-header">
-            <img :src="'/src/assets/project_logos/' + project.logo" :alt="project.name" />
+            <img :src="getImageUrl(project.logo)" :alt="project.name" />
         </div> 
         <h3>{{project.name}}</h3>
         <ul>

@@ -2,12 +2,16 @@
     defineProps({
         news: Object,
     });
+
+    const getImageUrl = (image) => {
+        return new URL(`../assets/${image}`, import.meta.url).href;
+    };
 </script>
 
 <template>
     <div class="new-card">
         <div class="left-side">
-            <img :src="'/src/assets/' + news.image" :alt="news.title" />
+            <img :src="getImageUrl(news.image)" :alt="news.title" />
             <small>{{news.date}}</small>
         </div>
         <div class="right-side">
